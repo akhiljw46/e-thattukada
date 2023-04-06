@@ -1,0 +1,77 @@
+{
+  "meals": {
+    "m1": {
+      "name": "Dosa",
+      "price": "10",
+      "description": "A crispy crepe-like dish made from fermented rice and lentil batter, usually served with sambar and chutney."
+    },
+    "m2": {
+      "name": "Idli",
+      "price": "8",
+      "description": "A steamed cake made from fermented rice and lentil batter, usually served with sambar and chutney."
+    },
+    "m3": {
+      "name": "Vada",
+      "price": "5",
+      "description": "A crispy fried snack made from a batter of lentils and spices, usually served with coconut chutney."
+    },
+    "m4": {
+      "name": "Uttapam",
+      "price": "10",
+      "description": "A thick pancake-like dish made from a batter of rice and lentils, usually topped with vegetables and served with sambar and chutney."
+    },
+    "m5": {
+      "name": "Pongal",
+      "price": "20",
+      "description": "A rice and lentil dish cooked with ghee, cashews, and spices, usually served with coconut chutney and sambar."
+    },
+    "m6": {
+      "name": "Bisi Bele Bath",
+      "price": "40",
+      "description": "A spicy and flavorful rice dish cooked with lentils, vegetables, and a special blend of spices, usually served with raita."
+    },
+    "m7": {
+      "name": "Masala Dosa",
+      "price": "60",
+      "description": "A dosa filled with a spicy potato filling, usually served with sambar and chutney."
+    },
+    "m8": {
+      "name": "Sambar",
+      "price": "20",
+      "description": "A lentil-based vegetable stew, usually served with rice or as a side dish with dosa or idli."
+    },
+    "m9": {
+      "name": "Rasam",
+      "price": "10",
+      "description": "A spicy and tangy soup made with tamarind, tomatoes, and spices, usually served with rice or as a side dish with dosa or idli."
+    },
+    "m10": {
+      "name": "Payasam",
+      "price": "30",
+      "description": "A sweet pudding made with milk, rice, vermicelli, or lentils, usually flavored with cardamom, saffron, or nuts."
+    }
+  },
+  "movies": {
+    "-NRJhaGYH6KlZpLJm3qQ": {
+      "openingText": "Akhil is the director",
+      "releaseDate": "24-03-2023",
+      "title": "My First Movie"
+    },
+    "-NRJjGQQ0E-KK0--mXsH": {
+      "openingText": "Akhil is ofcourse the director",
+      "releaseDate": "26-03-2023",
+      "title": "Second Movie"
+    }
+  },
+  "tasks": {
+    "-NRLXuafpvWFFWzDfTRQ": {
+      "text": "Wake Up!"
+    },
+    "-NROPz-wBBaeB3SFL3QP": {
+      "text": "Run for a while"
+    },
+    "-NROQ-cAB2hE3ntxhBAK": {
+      "text": "Return to home"
+    }
+  }
+}
