@@ -1,4 +1,4 @@
-# Food Order React App
+# e-Thattukada
 
 A Food order app.
-Created using react js.
+Created using React JS.
