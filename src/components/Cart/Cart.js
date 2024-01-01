@@ -6,7 +6,7 @@ import classes from './Cart.module.css';
 import CartItem from './CartItem';
 import Checkout from './Checkout';
 
-const Cart = (props) => {
+const Cart = props => {
   const cartCtx = useContext(CartContext);
   const [isCheckout, setIsCheckout] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -15,18 +15,18 @@ const Cart = (props) => {
   const totalAmount = `₹${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {
+  const cartItemRemoveHandler = id => {
     cartCtx.removeItem(id);
   };
 
-  const cartItemAddHandler = (item) => {
+  const cartItemAddHandler = item => {
     cartCtx.addItem({ ...item, amount: 1 });
   };
 
   const cartItems = (
     <ul className={classes['cart-items']}>
       {' '}
-      {cartCtx.items.map((item) => (
+      {cartCtx.items.map(item => (
         <CartItem
           key={item.id}
           name={item.name}
@@ -39,12 +39,12 @@ const Cart = (props) => {
     </ul>
   );
 
-  const orderHandler = (event) => {
+  const orderHandler = event => {
     event.preventDefault();
     setIsCheckout(true);
   };
 
-  const submitOrderHandler = async (userData) => {
+  const submitOrderHandler = async userData => {
     setIsSubmitting(true);
     await fetch(
       'https://react-http-c95e2-default-rtdb.firebaseio.com/orders.json',
