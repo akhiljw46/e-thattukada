@@ -2,6 +2,7 @@ import mealsImage from '../../assets/cover_large.jpg';
 import classes from './Header.module.css';
 import HeaderCartButton from './HeaderCartButton';
 import logo from '../../assets/logo.png';
+import { Parallax } from 'react-scroll-parallax';
 
 const Header = props => {
   return (
@@ -11,13 +12,16 @@ const Header = props => {
 
         <HeaderCartButton onClick={props.onShowCart} />
       </header>
+
       <div className={classes.logo}>
         <img src={logo} alt="logo" />
       </div>
 
-      <div className={classes['main-image']}>
-        <img src={mealsImage} alt="A table full of delicious food!" />
-      </div>
+      <Parallax speed={-50}>
+        <div className={classes['main-image']}>
+          <img src={mealsImage} alt="A table full of delicious food!" />
+        </div>
+      </Parallax>
     </>
   );
 };

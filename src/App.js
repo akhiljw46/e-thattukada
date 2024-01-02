@@ -4,6 +4,7 @@ import Cart from './components/Cart/Cart';
 import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import CartProvider from './store/CartProvider';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -12,13 +13,15 @@ function App() {
   const hideCartHandler = () => setCartIsShown(false);
 
   return (
-    <CartProvider>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler} />
-      <main>
-        <Meals />
-      </main>
-    </CartProvider>
+    <ParallaxProvider>
+      <CartProvider>
+        {cartIsShown && <Cart onClose={hideCartHandler} />}
+        <Header onShowCart={showCartHandler} />
+        <main>
+          <Meals />
+        </main>
+      </CartProvider>
+    </ParallaxProvider>
   );
 }
 
