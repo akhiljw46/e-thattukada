@@ -3,19 +3,29 @@ import classes from './Header.module.css';
 import HeaderCartButton from './HeaderCartButton';
 import logo from '../../assets/logo.png';
 import { Parallax } from 'react-scroll-parallax';
+import { useState } from 'react';
 
 const Header = props => {
+  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   return (
     <>
-      <header className={classes.header}>
+      <header
+        className={`${classes.header} ${
+          isHeaderVisible ? classes.visible : ''
+        }`}
+      >
         {/* <h1>e-Thattukada🍵</h1> */}
 
         <HeaderCartButton onClick={props.onShowCart} />
       </header>
 
-      <div className={classes.logo}>
+      <Parallax
+        onEnter={() => setIsHeaderVisible(false)}
+        onExit={() => setIsHeaderVisible(true)}
+        className={classes.logo}
+      >
         <img src={logo} alt="logo" />
-      </div>
+      </Parallax>
 
       <Parallax speed={-50}>
         <div className={classes['main-image']}>
