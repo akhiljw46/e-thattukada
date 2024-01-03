@@ -31,7 +31,7 @@ const Header = props => {
         <img src={logo} alt="logo" />
       </Parallax>
 
-      <Parallax speed={-50}>
+      <Parallax speed={-60}>
         <div className={classes['main-image']}>
           <img src={mealsImage} alt="A table full of delicious food!" />
         </div>

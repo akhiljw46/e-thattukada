@@ -1,8 +1,9 @@
 import classes from './MealsSummary.module.css';
+import { Parallax } from 'react-scroll-parallax';
 
 const MealsSummary = () => {
   return (
-    <section className={classes.summary}>
+    <Parallax speed={20} className={classes.summary}>
       <h2>Delicious Food, Delivered To You</h2>
       <p>
         Choose your favorite meal from our broad selection of available meals
@@ -12,7 +13,7 @@ const MealsSummary = () => {
         All our meals are cooked with high-quality ingredients, just-in-time and
         of course by experienced chefs!
       </p>
-    </section>
+    </Parallax>
   );
 };
 
