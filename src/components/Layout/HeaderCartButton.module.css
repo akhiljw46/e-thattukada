@@ -62,4 +62,17 @@
   .button {
     padding: 0.5rem 1rem;
   }
+  .icon {
+    width: 1.7rem;
+    height: 1.55rem;
+    margin-right: 0.3rem;
+  }
+  .text {
+    display: none;
+  }
+  .badge {
+    padding: 0.2rem 0.8rem;
+    border-radius: 25px;
+    margin-left: 0.5rem;
+  }
 }
