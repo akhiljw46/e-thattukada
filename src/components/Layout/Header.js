@@ -4,6 +4,7 @@ import HeaderCartButton from './HeaderCartButton';
 import logo from '../../assets/logo.png';
 import { Parallax } from 'react-scroll-parallax';
 import { useState } from 'react';
+import banner from '../../assets/banner.png';
 
 const Header = props => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -15,6 +16,9 @@ const Header = props => {
         }`}
       >
         {/* <h1>e-Thattukada🍵</h1> */}
+        <div className={classes.banner}>
+          <img src={banner} alt="logo" />
+        </div>
 
         <HeaderCartButton onClick={props.onShowCart} />
       </header>

@@ -20,6 +20,13 @@
   opacity: 1;
 }
 
+.banner {
+  height: 5rem;
+}
+.banner img {
+  height: 4.8rem;
+}
+
 .logo {
   position: absolute;
   top: 50%;
