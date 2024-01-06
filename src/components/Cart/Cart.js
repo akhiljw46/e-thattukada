@@ -46,16 +46,13 @@ const Cart = props => {
 
   const submitOrderHandler = async userData => {
     setIsSubmitting(true);
-    await fetch(
-      'https://react-http-c95e2-default-rtdb.firebaseio.com/orders.json',
-      {
-        method: 'POST',
-        body: JSON.stringify({
-          user: userData,
-          orderedItems: cartCtx.items,
-        }),
-      }
-    );
+    await fetch(`${process.env.REACT_APP_DATABASE_URL}/orders.json`, {
+      method: 'POST',
+      body: JSON.stringify({
+        user: userData,
+        orderedItems: cartCtx.items,
+      }),
+    });
     setIsSubmitting(false);
     setDidSubmit(true);
     cartCtx.clearCart();

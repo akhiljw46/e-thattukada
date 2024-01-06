@@ -11,7 +11,7 @@ const AvailableMeals = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        'https://react-http-c95e2-default-rtdb.firebaseio.com/meals.json'
+        `${process.env.REACT_APP_DATABASE_URL}/meals.json`
       );
 
       if (!res.ok) throw new Error('Something went wrong!');
@@ -33,7 +33,7 @@ const AvailableMeals = () => {
       setIsLoading(false);
     };
 
-    fetchData().catch((error) => {
+    fetchData().catch(error => {
       setIsLoading(false);
       setHttpError(error.message);
     });
@@ -53,7 +53,7 @@ const AvailableMeals = () => {
       </section>
     );
 
-  const mealsLis = meals.map((meal) => (
+  const mealsLis = meals.map(meal => (
     <MealItem
       key={meal.id}
       id={meal.id}
