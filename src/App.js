@@ -5,6 +5,7 @@ import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import CartProvider from './store/CartProvider';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Footer from './components/Layout/Footer';
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -20,6 +21,7 @@ function App() {
         <main>
           <Meals />
         </main>
+        <Footer />
       </CartProvider>
     </ParallaxProvider>
   );
