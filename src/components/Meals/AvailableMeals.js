@@ -26,6 +26,7 @@ const AvailableMeals = () => {
           name: resData[key].name,
           description: resData[key].description,
           price: +resData[key].price,
+          image: resData[key].image,
         });
       }
 
@@ -60,6 +61,7 @@ const AvailableMeals = () => {
       name={meal.name}
       description={meal.description}
       price={meal.price}
+      image={meal.image}
     >
       {meal.name}
     </MealItem>

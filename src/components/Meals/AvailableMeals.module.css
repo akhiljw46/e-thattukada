@@ -32,3 +32,16 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 480px) {
+  .meals {
+    max-width: none;
+    position: absolute;
+    /* max-width: 100rem; */
+    width: 100%;
+    margin: 0;
+  }
+  .meals ul {
+    left: 0;
+  }
+}
